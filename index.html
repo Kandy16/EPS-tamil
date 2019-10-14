@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ellipsis in Tamil survey">
-    <!--<meta name="author" content="Denis Memmesheimer">-->
-    <!--<link rel="icon" type="image/png" href="favicon32x32.png" sizes="32x32">-->
-    <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
     <title> Ellipsis in Tamil</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="lib/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
 </head>
-
 <body>
-<!--<form action="https://formspree.io/kassnik@gmail.com" method="POST">-->
-<form method="POST" action="https://formspree.io/kandy.from1986@gmail.com" >
-    <div class="container">
-        <div class="page-header">
+    <div class="container-fluid">
+        <div id="page-header">
             <h1>Ellipsis in Tamil</h1>
+            <div id="page-action">
+                <div class="new-file">
+                    <label for="file-input1">
+                        <img src="lib/open-iconic-master/png/file-4x.png" title="Pre-load Content"/>
+                    </label>
+                    <input type='button' id="file-input1" class='json-new'>
+                </div>
+                <div class="import-file">
+                    <label for="file-input2">
+                        <img src="lib/open-iconic-master/png/data-transfer-upload-4x.png" title="Load File"/>
+                    </label>
+                    <input type='file' id="file-input2" class='json-load'>
+                </div>
+                <div class="save-file">
+                    <label for="file-input3">
+                        <img src="lib/open-iconic-master/png/data-transfer-download-4x.png" title="Save File"/>
+                    </label>
+                    <input type='file' id="file-input3" class='json-save'>
+                </div>
+            </div>
             <p class="lead">
-                In linguistics, ellipsis (from the Greek: ἔλλειψις, élleipsis, "omission") or an elliptical construction is the omission from a clause of one or more words that are nevertheless understood in the context of the remaining elements.
+                In linguistics, ellipsis (from the Greek: ἔλλειψις, élleipsis, "omission") or an elliptical construction is the omission from a clause of one or more words that are nevertheless understood in the context of the remaining elements. This tool is intended to create ellipsis dataset for Tamil language. Users while creating alternative sentences for a given sentence should bear in mind that the meaning should be the same and it should not be compromised. 
             </p>
         </div>
-
-        <p id="lastParagraph"></p>
-        <button type="submit" class="btn btn-default btn-lg">Send</button>
-        <input name="result" type="hidden"/>
-        <script src="action.js"></script>
-        <script src="ie-emulation-modes-warning.js"></script>
-        <script src="ie10-viewport-bug-workaround.js"></script>
+        <div id="page-body"> </div>        
     </div>
-</form>
 </body>
+<script src="index.js"></script>
 </html>
